@@ -1,0 +1,633 @@
+.job {
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.job>div {
+    width: 90%;
+    background-color: aquamarine;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.job>div>.job-title {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.job>div>.job-title>span {
+    font-size: 40px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+    color: #532506;
+}
+
+#f-job {
+    width: 100%;
+}
+
+.job-content {
+    width: 100%;
+}
+
+.job-content>div {
+    width: 100%;
+}
+
+.job-content>div>.ten-congty,
+.loi-tua,
+.hinh-thuc-tuyen-dung {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 0 20px 0;
+    background-color: #d1cecb;
+}
+
+.ten-congty>span,
+.loi-tua>span,
+.hinh-thuc-tuyen-dung>span {
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 15px 5px 0 20px;
+    color: #532506;
+}
+
+.ten-congty>div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.d-recruitmentForm {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.l-companyName,
+.l-recruitmentForm,
+.l-worklocation {
+    width: auto;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #2c1505;
+}
+
+.l-companyName:hover,
+.l-recruitmentForm:hover,
+.l-worklocation:hover,
+.l-industry:hover,
+.l-treatment:hover {
+    cursor: pointer;
+    color: rgb(126, 73, 12);
+}
+
+.l-companyName:hover .i-companyName,
+.l-recruitmentForm:hover .i-recruitmentForm,
+.l-worklocation:hover .i-worklocation {
+    border: 1px solid rgb(238, 119, 8);
+}
+
+.inp-companyName,
+.inp-recruitmentForm,
+.inp-worklocation {
+    display: none;
+}
+
+.inp-companyName:checked+i::after,
+.inp-recruitmentForm:checked+i::after,
+.inp-worklocation:checked+i::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 8px;
+    width: 8px;
+    border-radius: 2px;
+    background: rgb(173, 87, 6);
+}
+
+.i-child {
+    border: 0;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    font-size: 22px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    border-bottom: 1px solid rgba(153, 109, 51, 0.767);
+    color: rgb(126, 72, 10);
+    text-align: center;
+}
+
+.i-child::placeholder {
+    color: #eee5dcf5;
+    text-align: center;
+    font-size: 16px;
+}
+
+.t-preface,
+.t-recruitmentForm {
+    height: 200px;
+    border: 1px solid rgba(82, 54, 21, 0.336);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5px 15px 0 15px;
+    margin: 5px 15px 0 15px;
+    outline: none;
+    font-size: 14px;
+    color: #532506;
+}
+
+.t-preface::placeholder,
+.t-recruitmentForm::placeholder {
+    font-size: 12px;
+    color: #cac3bc;
+}
+
+
+/*old*/
+
+.company .border {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+.company .border .title,
+.d-cancel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: rgb(163, 95, 6);
+}
+
+.company .border .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company .border .content .border-content {
+    box-sizing: border-box;
+    margin: 10px 10px;
+    padding: 20px 20px;
+    border: 2px solid rgba(82, 54, 21, 0.664);
+    box-shadow: 2px 2px 2px 2px rgba(155, 103, 44, 0.425);
+    border-radius: 15px;
+}
+
+.company .border .content .border-content .title-child,
+.founding,
+.preface,
+.recruitmentForm,
+.worklocation,
+.industry,
+.salary,
+.holidayVacation,
+.jobDescription,
+.workingHour,
+.requiredExperience,
+.welcomeSkills,
+.notices,
+.treatment {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+
+.company .border .content .border-content .title-child .s-child,
+.founding .s-founding,
+.preface .s-preface,
+.recruitmentForm .s-recruitmentForm,
+.worklocation .s-worklocation,
+.industry .s-industry,
+.salary .s-salary,
+.holidayVacation .s-holidayVacation,
+.jobDescription .s-jobDescription,
+.workingHour .s-workingHour,
+.requiredExperience .s-requiredExperience,
+.welcomeSkills .s-welcomeSkills,
+.notices .s-notices,
+.treatment .s-treatment {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(109, 64, 6);
+}
+
+
+/* .company .border .content .border-content .title-child .i-child { */
+
+.company .border .content .border-content .founding .i-founding {
+    width: 40%;
+    height: 40px;
+    text-align: center;
+    border: 1px solid rgb(153, 112, 51);
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 0 30px;
+    outline: none;
+    margin: 10px 0;
+    color: rgb(187, 111, 11);
+}
+
+.preface .d-preface,
+.salary .d-salary {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.preface .d-preface .l-preface,
+.salary .d-salary .l-salary {
+    width: 40%;
+    height: 40px;
+    border: 1px solid rgb(153, 109, 51);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(71, 47, 15);
+}
+
+.salary .d-salary .l-salary {
+    border: 0;
+    border-bottom: 1px solid rgba(153, 109, 51, 0.445);
+    border-radius: 0;
+}
+
+.preface .d-preface .l-preface .i-preface,
+.salary .d-salary .l-salary .i-salary {
+    border: 0;
+    height: 90%;
+    width: 87%;
+    font-size: 16px;
+    outline: none;
+    color: rgb(82, 52, 14);
+    text-align: center;
+}
+
+.company .border .content .border-content .preface .d-preface .l-preface .i-preface {
+    width: 90%;
+}
+
+.company .border .content .border-content .recruitmentForm .d-recruitmentForm,
+.worklocation .d-worklocation,
+.industry .d-industry,
+.treatment .d-treatment,
+.d-companyName {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(48, 26, 8);
+    font-size: 16px;
+    margin: 10px 10px;
+}
+
+.d-companyName2 {
+    font-size: 20px;
+    color: #8b3906;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.company .border .content .border-content .recruitmentForm .d-recruitmentForm .l-recruitmentForm,
+.industry .d-industry .l-industry,
+.worklocation .d-worklocation .l-worklocation,
+.l-companyName {
+    width: auto;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.company .border .content .border-content .recruitmentForm .d-recruitmentForm .l-recruitmentForm .inp-recruitmentForm,
+.worklocation .d-worklocation .l-worklocation .inp-worklocation,
+.industry .d-industry .l-industry .inp-industry,
+.treatment .d-treatment .l-treatment .inp-treatment,
+.inp-companyName {
+    display: none;
+}
+
+.company .border .content .border-content .recruitmentForm .d-recruitmentForm .l-recruitmentForm:hover,
+.worklocation .d-worklocation .l-worklocation:hover,
+.industry .d-industry .l-industry:hover,
+.treatment .d-treatment .l-treatment:hover,
+.l-companyName:hover {
+    cursor: pointer;
+    color: rgb(126, 73, 12);
+}
+
+.company .border .content .border-content .recruitmentForm .d-recruitmentForm .l-recruitmentForm .i-recruitmentForm,
+.worklocation .d-worklocation .l-worklocation .i-worklocation,
+.industry .d-industry .l-industry .i-industry,
+.treatment .d-treatment .l-treatment .i-treatment,
+.i-companyName {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    border: 1px solid rgb(97, 46, 5);
+    position: relative;
+    margin: 0 5px;
+    border-radius: 3px;
+}
+
+.company .border .content .border-content .recruitmentForm .d-recruitmentForm .l-recruitmentForm:hover .i-recruitmentForm,
+.industry .d-industry .l-industry:hover .i-industry,
+.treatment .d-treatment .l-treatment:hover .i-treatment,
+.worklocation .d-worklocation .l-worklocation:hover .i-worklocation,
+.l-companyName:hover .i-companyName {
+    border: 1px solid rgb(238, 119, 8);
+}
+
+.company .border .content .border-content .recruitmentForm .d-recruitmentForm .l-recruitmentForm .inp-recruitmentForm:checked+i::after,
+.industry .d-industry .l-industry .inp-industry:checked+i::after,
+.treatment .d-treatment .l-treatment .inp-treatment:checked+i:after,
+.worklocation .d-worklocation .l-worklocation .inp-worklocation:checked+i::after,
+.inp-companyName:checked+i::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 8px;
+    width: 8px;
+    border-radius: 2px;
+    background: rgb(173, 87, 6);
+}
+
+.company .border .content .border-content .recruitmentInformation,
+.jobDescription,
+.requiredExperience,
+.welcomeSkills,
+.notices {
+    height: auto;
+}
+
+.company .border .content .border-content .holidayVacation .t-holidayVacation,
+.jobDescription .t-jobDescription,
+.requiredExperience .t-requiredExperience,
+.welcomeSkills .t-welcomeSkills,
+.notices .t-notices,
+.worklocation .t-worklocation,
+.charterCapital .t-charterCapital,
+.salary .t-salary,
+.recruitmentForm .t-recruitmentForm,
+.workingHour .t-workingHour,
+.preface .t-preface,
+.treatment .t-treatment {
+    height: auto;
+    border: 1px solid rgba(82, 54, 21, 0.336);
+    border-radius: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    outline: none;
+    font-size: 16px;
+    color: #532506;
+}
+
+.jobDescription .t-jobDescription::placeholder,
+.welcomeSkills .t-welcomeSkills::placeholder,
+.requiredExperience .t-requiredExperience::placeholder,
+.workingHour .t-workingHour::placeholder,
+.recruitmentForm .t-recruitmentForm::placeholder,
+.worklocation .t-worklocation::placeholder,
+.salary .t-salary::placeholder,
+.notices .t-notices::placeholder,
+.preface .t-preface::placeholder,
+.holidayVacation .t-holidayVacation::placeholder,
+.treatment .t-treatment::placeholder {
+    color: #d1cecb;
+}
+
+.treatment .t-treatment {
+    height: 110px;
+}
+
+.company .border .content .border-content .holidayVacation .t-holidayVacation {
+    height: 180px;
+}
+
+.preface .t-preface {
+    height: 250px;
+}
+
+.notices .t-notices {
+    height: 390px;
+}
+
+.welcomeSkills .t-welcomeSkills {
+    height: 280px;
+}
+
+.requiredExperience .t-requiredExperience {
+    height: 270px;
+}
+
+.workingHour .t-workingHour {
+    height: 150px;
+}
+
+.recruitmentForm .t-recruitmentForm {
+    height: 110px;
+}
+
+.worklocation .t-worklocation {
+    height: 170px;
+}
+
+.salary .t-salary {
+    height: 100px;
+}
+
+.jobDescription .t-jobDescription {
+    height: 200px;
+}
+
+.company .border .content .border-content .workingHour .d-workingHour {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.company .border .content .border-content .workingHour .d-workingHour .l-workingHour {
+    width: auto;
+    height: auto;
+    margin: 0 10px;
+    font-size: 14px;
+    color: rgb(94, 61, 24);
+}
+
+.company .border .content .border-content .workingHour .d-workingHour .l-workingHour .i-workingHour {
+    width: 150px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(48, 27, 8);
+}
+
+.company .border .content .border-content .complete {
+    width: 100%;
+    height: 40px;
+    margin: 10px -10%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.company .border .content .border-content .complete .s-complete {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(63, 38, 6);
+}
+
+.btn-submit {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    margin-left: -300px;
+}
+
+.btn {
+    border: 1px solid rgba(156, 112, 62, 0.644);
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    position: relative;
+    width: 100px;
+    height: 40px;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+
+/* Pseudo elements for icons */
+
+.btn:before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Button 2 */
+
+.btn-2 {
+    background: #cb914e;
+    color: #fff;
+    box-shadow: 0 6px #d4b284;
+}
+
+
+/* Button 2a */
+
+.btn-2a {
+    border-radius: 5px;
+}
+
+.btn-2a:hover {
+    box-shadow: 0 4px #d6a270;
+    top: 2px;
+}
+
+.btn-2a:active {
+    box-shadow: 0 0 #ab683c;
+    top: 6px;
+}
+
+
+/* *********** Cancel -btn ***********/
+
+.company .border .d-cancel .btn-cancel {
+    margin-right: -300px;
+    border: 1px solid rgb(153, 100, 51);
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    margin-top: -55px;
+    box-shadow: 0 6px rosybrown;
+    position: relative;
+    cursor: pointer;
+}
+
+.company .border .d-cancel .btn-cancel::after {
+    content: '';
+    position: absolute;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.company .border .d-cancel .btn-cancel::before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+.company .border .d-cancel .btn-cancel:hover {
+    box-shadow: 0 4px rosybrown;
+    top: 2px;
+}
+
+.company .border .d-cancel .btn-cancel:active {
+    box-shadow: 0 0 rosybrown;
+    top: 6px;
+}
