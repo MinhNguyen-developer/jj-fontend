@@ -1,12 +1,14 @@
-import './Home.css';
-import Search from './Search/Search';
+/** @format */
+
+import "./Home.css";
+import Search from "./Search/Search";
 
 const Home = () => {
-    return (
-        <div className='home'>
-            <Search />
-        </div>
-    )
-}
+  return (
+    <div className="home h-[100vh]">
+      <Search />
+    </div>
+  );
+};
 
 export default Home;
